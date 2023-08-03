@@ -1,0 +1,126 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+
+
+body {
+    padding: 20px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.card {
+    box-shadow: 1px 1px 7px 3px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.top-section {
+    width: 100%;
+    height: 40%;
+    padding: 20px;
+    
+}
+
+.bottom-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+    
+}
+
+.left-bottom-section {
+    height: 100%;
+    background-color: #309d40;
+    padding: 20px;
+    color: white;
+    flex-basis: 50%;
+    
+}
+
+.right-bottom-section {
+    height: 100%;
+    background-color: #419d52;
+    padding: 20px;
+    color: white; 
+    flex-basis: 50%;
+}
+
+.top-section h2 {
+    margin: 0;
+    color: #309d40;
+    margin-bottom: 25px;
+}
+
+.top-section h4 {
+    color: rgb(223, 166, 22);
+    
+}
+
+.top-section p {
+    color: dimgray;
+    margin-top: 25px;
+}
+
+button {
+    background-color: rgb(223, 166, 22);
+    border: none;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: chartreuse;
+    transform: scale(1.03);
+    color: white;
+}
+
+.price p {
+    
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.frequency p {
+    position: relative;
+    top: -4px;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.price, .frequency {
+    display: inline-block;
+}
+
+
+li {
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    opacity: 0.8;
+}
+
+@media(min-width: 576px) {
+    .card {
+        width: 550px;
+        height: 480px;
+    }
+   
+    .bottom-section {
+        display: flex;
+        flex-direction: row;
+    }
+}
